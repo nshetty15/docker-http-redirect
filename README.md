@@ -1,5 +1,5 @@
-# http-redirect
-Redirect all incoming HTTP traffic to a different location
+# docker-http-redirect
+Docker container that can be configured to redirect all incoming HTTP traffic to a target location.
 
 ### ENV Variables
 
@@ -11,7 +11,7 @@ Redirect all incoming HTTP traffic to a different location
 ## How to run?
 
 ```sh
-docker run --rm -d -p 5000:5000 -e PORT=5000 -e REDIRECT_TARGET=https://www.my-domain.com/sports -e REDIRECT_STATUS_CODE=308 nshetty15/http-redirect  
+docker run --rm -d -p 5000:5000 -e PORT=5000 -e REDIRECT_TARGET=https://www.my-domain.com/sports -e REDIRECT_STATUS_CODE=308 nshetty15/docker-http-redirect
 ```
 
 Once the container is running, simply send the request to the running application
@@ -27,3 +27,6 @@ GET https://www.my-domain.com/sports 200
 ## License
 
 MIT
+
+
+
