@@ -8,6 +8,9 @@ Docker container that can be configured to redirect all incoming HTTP traffic to
 - REDIRECT_STATUS_CODE = Use any redirect status code like 301, 302, 303, 307, 308. Default is 301.
 - FLASK_ENV = default is PRODUCTION which runs waitress server. Other option is DEVELOPMENT which runs flask dev server.
 
+## Docker Hub
+https://hub.docker.com/r/nshetty15/docker-http-redirect
+
 ## How to run?
 
 ```sh
@@ -20,10 +23,10 @@ curl --location --request GET 'localhost:5000/sports'
 ```
 Check the logs to see the redirection take place.
 
+```sh
 GET http://localhost:5000/sports   308
-
 GET https://www.my-domain.com/sports 200
-
+```
 ## License
 
 MIT
