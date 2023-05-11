@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag nshetty15/http-redirect:$(date +%s)
+      run: docker build . --file Dockerfile --tag nshetty15/docker-http-redirect:$(date +%s)
