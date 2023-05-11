@@ -6,6 +6,6 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY http-redirect.py .
+COPY docker-http-redirect.py .
 
 CMD ["python", "http-redirect.py"]
